@@ -1,3 +1,3 @@
 # mystudio
 
-some code to study qt features
+codes to study qt features
