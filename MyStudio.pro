@@ -3,4 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS += \
     MyCoo \    
     MyUtil \
-    MyApp
+    MyApp \
+    MyWebApp
