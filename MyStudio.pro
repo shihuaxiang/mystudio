@@ -4,4 +4,5 @@ SUBDIRS += \
     MyCoo \    
     MyUtil \
     MyApp \
-    MyWebApp
+    MyWebApp \
+    MyTest
