@@ -2,4 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     wheelTest \
-    rotateTest
+    rotateTest \
+    KeyEventTest \
+    TransparentTest
