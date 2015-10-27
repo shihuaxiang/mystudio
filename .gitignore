@@ -9,3 +9,6 @@ genvcproj.bat
 /*/*.vcxproj.filters
 *.pro.user
 *.sln
+*.sdf
+*.opensdf
+*.suo
