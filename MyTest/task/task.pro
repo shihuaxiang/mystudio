@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-10-27T14:47:07
+# Project created by QtCreator 2015-10-27T15:04:57
 #
 #-------------------------------------------------
 
@@ -8,19 +8,18 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QT += webkitwidgets webkit
-
-TARGET = KeyEventTest
+TARGET = task
 TEMPLATE = app
 
+
 SOURCES += main.cpp\
-        MainWindow.cpp \
-    KeyPressEater.cpp
+        ProcessInfoForm.cpp \
+    tableviewhelper.cpp
 
-HEADERS  += MainWindow.h \
-    KeyPressEater.h
+HEADERS  += ProcessInfoForm.h \
+    tableviewhelper.h
 
-FORMS    += MainWindow.ui
+FORMS    += ProcessInfoForm.ui
 
 CONFIG(debug, debug|release){
     #output

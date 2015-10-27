@@ -4,4 +4,5 @@ SUBDIRS += \
     wheelTest \
     rotateTest \
     KeyEventTest \
-    TransparentTest
+    TransparentTest \
+    task
