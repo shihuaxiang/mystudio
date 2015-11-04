@@ -12,14 +12,14 @@ TARGET = task
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        ProcessInfoForm.cpp \
-    tableviewhelper.cpp
+SOURCES += main.cpp \
+    ProcessListWidget.cpp
 
-HEADERS  += ProcessInfoForm.h \
-    tableviewhelper.h
+HEADERS  += \
+    ProcessListWidget.h
 
-FORMS    += ProcessInfoForm.ui
+FORMS    += \
+    ProcessListWidget.ui
 
 CONFIG(debug, debug|release){
     #output
