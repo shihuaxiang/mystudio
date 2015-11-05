@@ -30,13 +30,17 @@ class ProcessListWidget : public QWidget
 public:
     explicit ProcessListWidget(QWidget *parent = 0);
     ~ProcessListWidget();
+    void refreshTableItems();
+    bool terminateProcess(int pid);
 
-    private slots:
+signals:
+    void processClicked(int pid);
+
+private slots:
     void on_tbvProcesses_doubleClicked(const QModelIndex &index);
 
 private:
-    void initTableView();
-    void refreshTableItems();
+    void initTableView();    
     void initConnection();
     void getProcesses();
 

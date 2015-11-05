@@ -43,6 +43,22 @@ void ProcessListWidget::on_tbvProcesses_doubleClicked(const QModelIndex &index)
     int pid = pidString.toInt();
 
     qDebug() << "pid is: " << pid;
+    emit processClicked(pid);
+}
+
+bool ProcessListWidget::terminateProcess(int pid)
+{
+    DWORD dwDesiredAccess = PROCESS_TERMINATE;
+    BOOL  bInheritHandle = FALSE;
+    HANDLE hProcess = OpenProcess(dwDesiredAccess, bInheritHandle, pid);
+    if (hProcess == NULL)
+        return FALSE;
+
+    BOOL result = TerminateProcess(hProcess, 1);
+
+    CloseHandle(hProcess);
+
+    return result;
 }
 
 void ProcessListWidget::setTableViewStyle(QTableView *tbv)
